@@ -7,7 +7,7 @@
     border-bottom: 1px solid cornsilk;
 }
 .navbar .nav-item a{
-    color: rgb(119, 5, 119);
+    color:  blueviolet;
 }
 .nav-item{
     margin: 0 10px;
@@ -18,12 +18,12 @@
 }
 .navbar .nav-item .btn{
     color: floralwhite;
-    background-color:rgb(126, 0, 130);
+    background-color:rgb(153, 20, 206);
 }
-.nav-link.btn.btn-primary:hover{
+.nav-link.btn.btn-primary:hover, #search-form button:hover, .list-group-item a:hover{
     background-color: lavenderblush
-    rgb(194, 100, 237);
-    border-color:crimson;
+    rgb(186, 116, 233);
+    border-color:rgb(165, 82, 221);
 }
 /*banner*/
 #top-container{
@@ -32,8 +32,97 @@
      border-bottom: 4px solid #9743e6;/*bordinha*/
      margin-bottom:30px; /*decolar elementos*/
      background-image: url(../img/YxRayv.jpeg);
-     background-position: 0 100px;
+     background-position: 0 100px;/*desloca p cima*/
      background-size: cover;
      color: #f7f9fc;
+}
+/*titulo e subtitulo do bnner*/
+#main-title{
+    padding: 30px 0;
+    font-size: 3rem;
+}
+#main-subtitle{
+    font-size: 1rem;
+    padding: 80px;
+}
+/*form*/
+
+#search-form{
+    padding: 30px 100px;
+}
+#search-form .col-md-10, #search-form .col-md-2{/*tirar paddins para grudar os dois*/
+        padding: 0;
+}
+#search-form input, #search-form button{
+    width: 100%;
+    border-radius: 0;
+    height: 50px;
+    font-size: 18px;
 
 }
+#search-form button{
+    color: #f7f9fc;
+    background-color: blueviolet;
+    border:1px solid transparent;
+}
+
+/*lista*/
+#jobs-container{
+    padding: 0 100px;
+    padding-bottom: 50px;
+}
+
+#job-list .list-group-item{/*item de cada lista*/
+    margin-bottom: 8px;/*descolar um do outro*/
+    border: 1px solid #ccc;
+    padding:15px 80px;
+    color: #212529;
+    height: 120px;
+}
+#job-list .list-group-item p{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+#job-list .list-group-item.new-job {/*quando  é  novo é diferenrete*/
+    border: none;
+    background-color: rgb(253, 241, 255);
+}
+#job-list-title{
+    margin-bottom: 35px;
+}
+.list-group-item img{
+    width: 80px;
+    height: 60px;
+    border:1px solid #212529;
+    border-radius: 50%;
+    background-color: #f7f9fc;
+    position: absolute;
+    left: -40px;
+    top:calc(50% - 40px);
+}
+.list-group-item a{
+    position: absolute;
+    right: 20px;/*jga pr direita*/
+    top: 35px;
+    height: 50px;
+    line-height: 37px;
+    background-color: rgb(163, 93, 209);
+    border: 1px transparent;
+    border-radius: 0;
+}
+.new-job-label{
+    background-color: rgb(248, 245, 62);
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 10px;
+    position: absolute;
+    right: 250px;
+    top: 40px;
+    display: none;/*escoder qunado nao é novo*/
+}
+.new-job .new-job-label{/*mostrarquado é novo*/
+    display: block;
+}
+
+
