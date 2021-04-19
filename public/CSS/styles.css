@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;/*não passa do tamanho estipulado mesmo com a borda*/
+    font-family: Helvetica, sans-serif;
+}
+.navbar{
+    padding: 1rem;
+    border-bottom: 1px solid cornsilk;
+}
+.navbar .nav-item a{
+    color: rgb(119, 5, 119);
+}
+.nav-item{
+    margin: 0 10px;
+}
+.navbar-expand-lg .navbat-nav .nav-link{
+    color: floralwhite;
+    font-weight: bold;
+}
+.navbar .nav-item .btn{
+    color: floralwhite;
+    background-color:rgb(126, 0, 130);
+}
+.nav-link.btn.btn-primary:hover{
+    background-color: lavenderblush
+    rgb(194, 100, 237);
+    border-color:crimson;
+}
+/*banner*/
+#top-container{
+     padding: 110px;
+     background-color: #f7f9fc;
+     border-bottom: 4px solid #9743e6;/*bordinha*/
+     margin-bottom:30px; /*decolar elementos*/
+     background-image: url(../img/YxRayv.jpeg);
+     background-position: 0 100px;
+     background-size: cover;
+     color: #f7f9fc;
+
+}
